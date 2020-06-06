@@ -48,12 +48,15 @@ Config Settings
 ::
 
     # The organization to which new users are added
-    ckan.userautoaddgroup.group_name_1 = main-categories
-    ckan.userautoaddgroup.group_name_2 = agricultural-research-stations
-    ckan.userautoaddgroup.group_name_3 = themes
+    ckan.userautoaddgroup.group_name_1 = [name1]
+    ckan.userautoaddgroup.group_name_2 = [name2]
+    ckan.userautoaddgroup.group_name_3 = [name3]
 
     # The role the new users will have
-    ckan.userautoaddgroup.group_role = editor
+    ckan.userautoaddgroup.group_role = [editor / admin]
+    
+    # The name of the admin
+    ckan.userautoaddgroup.admin_usename = [admin user name]
 
 
 

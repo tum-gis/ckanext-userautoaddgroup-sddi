@@ -4,7 +4,7 @@ import ckan.logic as logic
 from ckan.logic.action.create import user_create as ckan_user_create
 import ckan.plugins.toolkit as toolkit
 
-@toolkit.chained_action
+#@toolkit.chained_action
 def user_create(ckan_user_create, context, data_dict):
     user = ckan_user_create(context, data_dict)
 
@@ -12,6 +12,7 @@ def user_create(ckan_user_create, context, data_dict):
     org_name_2 = config.get('ckan.userautoaddgroup.group_name_2', '')
     org_name_3 = config.get('ckan.userautoaddgroup.group_name_3', '')
     role = config.get('ckan.userautoaddgroup.group_role', '')
+    admin = config.get('ckan.userautoaddgroup.admin_usename', '')
 
 
     try:
@@ -43,21 +44,21 @@ def user_create(ckan_user_create, context, data_dict):
         
 
     toolkit.get_action('group_member_create')(
-        {'user': 'mandana'}, {
+        {'user': admin}, {
             'id': org_name_1,
             'username': user['name'],
             'role': role,
         }
         )
     toolkit.get_action('group_member_create')(
-        {'user': 'mandana'}, {
+        {'user': admin}, {
             'id': org_name_2,
             'username': user['name'],
             'role': role,
         }
         )
     toolkit.get_action('group_member_create')(
-        {'user': 'mandana'}, {
+        {'user': admin}, {
             'id': org_name_3,
             'username': user['name'],
             'role': role,
