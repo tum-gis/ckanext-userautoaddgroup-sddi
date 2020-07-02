@@ -1,18 +1,19 @@
-import pylons.config as config
+#import pylons.config as config
+from ckan.common import config
 
 import ckan.logic as logic
 from ckan.logic.action.create import user_create as ckan_user_create
 import ckan.plugins.toolkit as toolkit
 
 #@toolkit.chained_action
-def user_create(ckan_user_create, context, data_dict):
+def user_create(context, data_dict):
     user = ckan_user_create(context, data_dict)
 
     org_name_1 = config.get('ckan.userautoaddgroup.group_name_1', '')
     org_name_2 = config.get('ckan.userautoaddgroup.group_name_2', '')
     org_name_3 = config.get('ckan.userautoaddgroup.group_name_3', '')
     role = config.get('ckan.userautoaddgroup.group_role', '')
-    admin = config.get('ckan.userautoaddgroup.admin_usename', '')
+    admin = config.get('ckan.userautoaddgroup.admin_username', '')
 
 
     try:
