@@ -56,7 +56,7 @@ Config Settings
     ckan.userautoaddgroup.group_role = [editor / admin]
     
     # The name of the admin
-    ckan.userautoaddgroup.admin_usename = [admin user name]
+    ckan.userautoaddgroup.admin_username = [admin user name]
 
 
 
