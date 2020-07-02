@@ -3,6 +3,8 @@ from setuptools import setup, find_packages  # Always prefer setuptools over dis
 from codecs import open  # To use a consistent encoding
 from os import path
 
+version = '1.0.2'
+
 here = path.abspath(path.dirname(__file__))
 
 # Get the long description from the relevant file
@@ -15,18 +17,15 @@ setup(
     # Versions should comply with PEP440.  For a discussion on single-sourcing
     # the version across setup.py and the project code, see
     # http://packaging.python.org/en/latest/tutorial.html#version
-    version='1.0.2',
+    version = version,
 
-    description='''CKAN extension to add new users to groups and organisations''',
+    description="CKAN extension to add new users to groups",
     long_description=long_description,
 
-    # The project's main homepage.
-    url='https://github.com/aptivate/ckanext-userautoadd',
 
     # Author details
-    author='''Aptivate''',
-    author_email='''mapaction-team@aptivate.org''',
-
+    author='Mandana Moshrefzadeh'',
+    author_email='mandana.moshrefzadeh@tum.de',
     # Choose your license
     license='AGPL',
 
@@ -39,17 +38,16 @@ setup(
         'Development Status :: 4 - Beta',
 
         # Pick your license as you wish (should match "license" above)
-        'License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)',
+        License = 'GNU Affero General Public License v3 or later (AGPLv3+)',
 
         # Specify the Python versions you support here. In particular, ensure
         # that you indicate whether you support Python 2, Python 3 or both.
-        'Programming Language :: Python :: 2.6',
         'Programming Language :: Python :: 2.7',
     ],
 
 
     # What does your project relate to?
-    keywords='''CKAN user organization group''',
+    keywords="CKAN user group",
 
     # You can just specify the packages manually here if your project is
     # simple. Or you can use find_packages().
