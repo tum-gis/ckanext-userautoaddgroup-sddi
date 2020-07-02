@@ -15,7 +15,7 @@ This code is adjusted from:
 Requirements
 ------------
 
-Tested with CKAN v2.8.0
+Tested with CKAN v2.9
 
 ------------
 Installation
@@ -60,14 +60,13 @@ Config Settings
 
 
 
------
-About
------
-This code is an adaptation of following programers:
+-----------
+Background
+-----------
+This code is inspired by the "ckanext-userautoadd":
+https://github.com/aptivate/ckanext-userautoadd
 
-Copyright (c) 2016 `MapAction <http://mapaction.org>`_. Developed by `Aptivate <http://aptivate.org>`_.
-
-Development of v1 of this plugin was funded by `ECHO <http://ec.europa.eu/echo>`_.
-
-.. image:: http://www.echo-visibility.eu/wp-content/uploads/2014/02/EU_Flag_HA_2016_EN-300x272.png
-   :alt: "Funded by European Union Humanitarian Aid"
+-----------
+License
+-----------
+This ckan extension is available as free and open source and is licensed under the terms of the GNU Affero General Public License, version 3, as published by the Free Software Foundation. 
