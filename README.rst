@@ -15,7 +15,7 @@ This code is adjusted from:
 Requirements
 ------------
 
-Tested with CKAN v2.8.0
+Tested with CKAN v2.9
 
 ------------
 Installation
