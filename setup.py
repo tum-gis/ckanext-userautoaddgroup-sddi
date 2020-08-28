@@ -26,7 +26,7 @@ setup(
 
 
     # Author details
-    author='Mandana Moshrefzadeh'',
+    author='Mandana Moshrefzadeh',
     author_email='mandana.moshrefzadeh@tum.de',
     # Choose your license
     license='AGPL',
